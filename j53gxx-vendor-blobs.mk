@@ -1,5 +1,15 @@
 PROPRIETARY_PATH := vendor/samsung/j53gxx/proprietary
 
+#ACDBs
+PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
+	$(PROPRIETARY_PATH)/etc/General_cal.acdb:system/etc/General_cal.acdb \
+	$(PROPRIETARY_PATH)/etc/Global_cal.acdb:system/etc/Global_cal.acdb \
+	$(PROPRIETARY_PATH)/etc/Handset_cal.acdb:system/etc/Handset_cal.acdb \
+	$(PROPRIETARY_PATH)/etc/Hdmi_cal.acdb:system/etc/Hdmi_cal.acdb \
+	$(PROPRIETARY_PATH)/etc/Headset_cal.acdb:system/etc/Headset_cal.acdb \
+	$(PROPRIETARY_PATH)/etc/Speaker_cal.acdb:system/etc/Speaker_cal.acdb
+
 # ADSP
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/adsprpcd:system/bin/adsprpcd \
