@@ -181,7 +181,24 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/etc/somxreg.conf:system/etc/somxreg.conf \
+	$(PROPRIETARY_PATH)/lib/libsomx263dsw.so:system/lib/libsomx263dsw.so \
+	$(PROPRIETARY_PATH)/lib/libsomx264dsw.so:system/lib/libsomx264dsw.so \
+	$(PROPRIETARY_PATH)/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
+	$(PROPRIETARY_PATH)/lib/libsomxaace.so:system/lib/libsomxaace.so \
+	$(PROPRIETARY_PATH)/lib/libsomxadpcmd.so:system/lib/libsomxadpcmd.so \
+	$(PROPRIETARY_PATH)/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
+	$(PROPRIETARY_PATH)/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
+	$(PROPRIETARY_PATH)/lib/libsomxcore.so:system/lib/libsomxcore.so \
+	$(PROPRIETARY_PATH)/lib/libsomxflacd.so:system/lib/libsomxflacd.so \
+	$(PROPRIETARY_PATH)/lib/libsomxhevcdsw.so:system/lib/libsomxhevcdsw.so \
+	$(PROPRIETARY_PATH)/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
+	$(PROPRIETARY_PATH)/lib/libsomxmp4vdsw.so:system/lib/libsomxmp4vdsw.so \
+	$(PROPRIETARY_PATH)/lib/libsomxnaace.so:system/lib/libsomxnaace.so \
+	$(PROPRIETARY_PATH)/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
+	$(PROPRIETARY_PATH)/lib/libdivxdrmdecrypt.so:system/lib/libdivxdrmdecrypt.so \
 	$(PROPRIETARY_PATH)/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
