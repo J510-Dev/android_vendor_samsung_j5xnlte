@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),j53gxx)
+ifeq ($(TARGET_DEVICE),j5xnlte)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libtime_genoff
