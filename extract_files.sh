@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BLOB_FILE=j53gxx-vendor-blobs.mk
+BLOB_FILE=j5xnlte-vendor-blobs.mk
 PROP_DIR=proprietary
 
 RED='\033[1;31m'
