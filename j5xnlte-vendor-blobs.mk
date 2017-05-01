@@ -40,13 +40,14 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
 	$(PROPRIETARY_PATH)/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
-	$(PROPRIETARY_PATH)/etc/D05QL_s5k5e3yx_module_info.xml:system/etc/T13QL_s5k3l2xx_module_info.xml \
-	$(PROPRIETARY_PATH)/etc/J05QF_sr552_module_info.xml:system/etc/T13QL_s5k3l2xx_module_info.xml \
-	$(PROPRIETARY_PATH)/etc/V13QL_s5k3l2xx_module_info.xml:system/etc/T13QL_s5k3l2xx_module_info.xml \
+	$(PROPRIETARY_PATH)/etc/D05QL_s5k5e3yx_module_info.xml:system/etc/D05QL_s5k5e3yx_module_info.xml \
+	$(PROPRIETARY_PATH)/etc/J05QF_sr552_module_info.xml:system/etc/J05QF_sr552_module_info.xml \
+	$(PROPRIETARY_PATH)/etc/V13QL_s5k3l2xx_module_info.xml:system/etc/V13QL_s5k3l2xx_module_info.xml \
 	$(PROPRIETARY_PATH)/lib/hw/camera.msm8916.so:system/lib/hw/camera.vendor.msm8916.so \
 	$(PROPRIETARY_PATH)/lib/libaec_algo_front.so:system/lib/libaec_algo_front.so \
 	$(PROPRIETARY_PATH)/lib/libaec_algo_rear.so:system/lib/libaec_algo_rear.so \
 	$(PROPRIETARY_PATH)/lib/libaf_algo_rear.so:system/lib/libaf_algo_rear.so \
+	$(PROPRIETARY_PATH)/lib/libTsAf.so:system/lib/libTsAf.so \
 	$(PROPRIETARY_PATH)/lib/libAl_Awb.so:system/lib/libAl_Awb.so \
 	$(PROPRIETARY_PATH)/lib/libAl_Awb_Sp.so:system/lib/libAl_Awb_Sp.so \
 	$(PROPRIETARY_PATH)/lib/libawb_algo_front_al.so:system/lib/libawb_algo_front_al.so \
@@ -100,6 +101,8 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_m24128s_eeprom.so:system/vendor/lib/libmmcamera_m24128s_eeprom.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
@@ -194,6 +197,7 @@ PRODUCT_COPY_FILES += \
 # Media
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/somxreg.conf:system/etc/somxreg.conf \
+	$(PROPRIETARY_PATH)/lib/libsomp.so:system/lib/libsomp.so \
 	$(PROPRIETARY_PATH)/lib/libsomx263dsw.so:system/lib/libsomx263dsw.so \
 	$(PROPRIETARY_PATH)/lib/libsomx264dsw.so:system/lib/libsomx264dsw.so \
 	$(PROPRIETARY_PATH)/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
@@ -206,8 +210,14 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libsomxhevcdsw.so:system/lib/libsomxhevcdsw.so \
 	$(PROPRIETARY_PATH)/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
 	$(PROPRIETARY_PATH)/lib/libsomxmp4vdsw.so:system/lib/libsomxmp4vdsw.so \
+	$(PROPRIETARY_PATH)/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
 	$(PROPRIETARY_PATH)/lib/libsomxnaace.so:system/lib/libsomxnaace.so \
+	$(PROPRIETARY_PATH)/lib/libsomxvc1dsw.so:system/lib/libsomxvc1dsw.so \
+	$(PROPRIETARY_PATH)/lib/libsomxvencsw.so:system/lib/libsomxvencsw.so \
 	$(PROPRIETARY_PATH)/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
+	$(PROPRIETARY_PATH)/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
+	$(PROPRIETARY_PATH)/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
+	$(PROPRIETARY_PATH)/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \
 	$(PROPRIETARY_PATH)/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
@@ -228,7 +238,7 @@ PRODUCT_COPY_FILES += \
 
 # Perf
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)vendor/bin/perfd:system/vendor/bin/perfd \
+	$(PROPRIETARY_PATH)/vendor/bin/perfd:system/vendor/bin/perfd \
 	$(PROPRIETARY_PATH)/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so
 
 # Postprocessing
@@ -292,7 +302,7 @@ PRODUCT_COPY_FILES += \
 
 # Thermal
 PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+	$(PROPRIETARY_PATH)/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
 	$(PROPRIETARY_PATH)/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so
 		
@@ -318,7 +328,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libsubsystem_control.so:system/vendor/lib/libsubsystem_control.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so
 
 ## Audio
 PRODUCT_COPY_FILES += \
@@ -335,10 +345,18 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungRecord_ns.so:system/lib/libsamsungRecord_ns.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungRecord_zoom.so:system/lib/libsamsungRecord_zoom.so \
+	$(PROPRIETARY_PATH)/lib/lib_Samsung_AudioZoom_v102.so:system/lib/lib_Samsung_AudioZoom_v102.so \
+	$(PROPRIETARY_PATH)/lib/lib_SamsungRec_V04013.so:system/lib/lib_SamsungRec_V04013.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungAPVoiceEngine.so:system/lib/libSamsungAPVoiceEngine.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungMusic_v5.so:system/lib/libSamsungMusic_v5.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungPostProcessConvertor.so:system/lib/libSamsungPostProcessConvertor.so \
 	$(PROPRIETARY_PATH)/lib/lib_SamsungRec_V04013.so:system/lib/lib_SamsungRec_V04013.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungSoundbooster_pgb.so:system/lib/libsamsungSoundbooster_pgb.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungSoundbooster_pgb.so:system/lib/libsamsungSoundbooster_pgb.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungVoipResampler.so:system/lib/libsamsungVoipResampler.so \
+	$(PROPRIETARY_PATH)/lib/lib_SamsungVAD_v01009.so:system/lib/lib_SamsungVAD_v01009.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungvad.so:system/lib/libsamsungvad.so \
 	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_3DPosition_ver107.so:system/lib/lib_SoundAlive_3DPosition_ver107.so \
 	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_play_plus_ver126a.so:system/lib/lib_SoundAlive_play_plus_ver126a.so \
 	$(PROPRIETARY_PATH)/lib/lib_soundaliveresampler.so:system/lib/lib_soundaliveresampler.so \
