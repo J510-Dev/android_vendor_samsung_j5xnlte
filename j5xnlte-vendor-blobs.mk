@@ -119,7 +119,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
 	$(PROPRIETARY_PATH)/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_sr552.so:vendor/lib/libmmcamera_sr552.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libmmcamera_sr552.so:system/vendor/lib/libmmcamera_sr552.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_common.so:system/vendor/lib/libchromatix_sr552_common.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_preview.so:system/vendor/lib/libchromatix_sr552_preview.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_snapshot.so:system/vendor/lib/libchromatix_sr552_snapshot.so \
@@ -128,7 +128,8 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_vt_15fps.so:system/vendor/lib/libchromatix_sr552_vt_15fps.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_vt_30fps.so:system/vendor/lib/libchromatix_sr552_vt_30fps.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_liveshot.so:system/vendor/lib/libchromatix_sr552_liveshot.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_zslshot.so:system/vendor/lib/libchromatix_sr552_zslshot.so
+	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_zslshot.so:system/vendor/lib/libchromatix_sr552_zslshot.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libavenhancements.so:system/vendor/lib/libavenhancements.so
 
 # Widevine
 PRODUCT_COPY_FILES += \
@@ -330,44 +331,47 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so
 
+
 ## Audio
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libaudioroute.so:system/lib/libaudioroute.so \
 	$(PROPRIETARY_PATH)/lib/hw/audio.primary.msm8916.so:system/lib/hw/audio.primary.msm8916.so \
-	$(PROPRIETARY_PATH)/lib/lib_DNSe_EP_ver216c.so:system/lib/lib_DNSe_EP_ver216c.so \
-	$(PROPRIETARY_PATH)/lib/lib_DNSe_NRSS_ver226.so:system/lib/lib_DNSe_NRSS_ver2226.so \
+	$(PROPRIETARY_PATH)/lib/lib_DNSe_EP_ver216b.so:system/lib/lib_DNSe_EP_ver216b.so \
+	$(PROPRIETARY_PATH)/lib/lib_DNSe_NRSS_ver230.so:system/lib/lib_DNSe_NRSS_ver230.so \
+	$(PROPRIETARY_PATH)/lib/lib_PreGainBooster_ver104.so:system/lib/lib_PreGainBooster_ver104.so \
 	$(PROPRIETARY_PATH)/lib/libmysound.so:system/lib/libmysound.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungearcare.so:system/lib/libsamsungearcare.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungeffect.so:system/lib/libsamsungeffect.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungMusic_v4.so:system/lib/libSamsungMusic_v4.so \
 	$(PROPRIETARY_PATH)/lib/libSamsungPkcs11Wrapper.so:system/lib/libSamsungPkcs11Wrapper.so \
+	$(PROPRIETARY_PATH)/lib/libSamsungPostProcess.so:system/lib/libSamsungPostProcess.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungpowersound.so:system/lib/libsamsungpowersound.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungpowersound.so:system/lib/libsamsungpowersound.so \
 	$(PROPRIETARY_PATH)/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungRecord_ns.so:system/lib/libsamsungRecord_ns.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
-	$(PROPRIETARY_PATH)/lib/libsamsungRecord_zoom.so:system/lib/libsamsungRecord_zoom.so \
-	$(PROPRIETARY_PATH)/lib/lib_Samsung_AudioZoom_v102.so:system/lib/lib_Samsung_AudioZoom_v102.so \
 	$(PROPRIETARY_PATH)/lib/lib_SamsungRec_V04013.so:system/lib/lib_SamsungRec_V04013.so \
-	$(PROPRIETARY_PATH)/lib/libSamsungAPVoiceEngine.so:system/lib/libSamsungAPVoiceEngine.so \
-	$(PROPRIETARY_PATH)/lib/libSamsungMusic_v5.so:system/lib/libSamsungMusic_v5.so \
-	$(PROPRIETARY_PATH)/lib/libSamsungPostProcessConvertor.so:system/lib/libSamsungPostProcessConvertor.so \
-	$(PROPRIETARY_PATH)/lib/lib_SamsungRec_V04013.so:system/lib/lib_SamsungRec_V04013.so \
+	$(PROPRIETARY_PATH)/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungSoundbooster_ext.so:system/lib/libsamsungSoundbooster_ext.so \
+	$(PROPRIETARY_PATH)/lib/libsamsungSoundbooster_ext.so:system/lib/libsamsungSoundbooster_ext.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungSoundbooster_pgb.so:system/lib/libsamsungSoundbooster_pgb.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungSoundbooster_pgb.so:system/lib/libsamsungSoundbooster_pgb.so \
 	$(PROPRIETARY_PATH)/lib/libsamsungVoipResampler.so:system/lib/libsamsungVoipResampler.so \
-	$(PROPRIETARY_PATH)/lib/lib_SamsungVAD_v01009.so:system/lib/lib_SamsungVAD_v01009.so \
-	$(PROPRIETARY_PATH)/lib/libsamsungvad.so:system/lib/libsamsungvad.so \
 	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_3DPosition_ver107.so:system/lib/lib_SoundAlive_3DPosition_ver107.so \
 	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_play_plus_ver126a.so:system/lib/lib_SoundAlive_play_plus_ver126a.so \
 	$(PROPRIETARY_PATH)/lib/lib_soundaliveresampler.so:system/lib/lib_soundaliveresampler.so \
 	$(PROPRIETARY_PATH)/lib/libsoundalive.so:system/lib/libsoundalive.so \
 	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_SRC192_ver205.so:system/lib/lib_SoundAlive_SRC192_ver205.so \
-	$(PROPRIETARY_PATH)/lib/libSoundAlive_VSP_ver315b_arm.so:system/lib/libSoundAlive_VSP_ver315b_arm.so \
+	$(PROPRIETARY_PATH)/lib/lib_SoundAlive_ver118t.so:system/lib/lib_SoundAlive_ver118t.so \
+	$(PROPRIETARY_PATH)/lib/lib_SoundBooster_ver608.so:system/lib/lib_SoundBooster_ver608.so \
 	$(PROPRIETARY_PATH)/lib/libtinyalsa.so:system/lib/libtinyalsa.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libaudioeffectoffload.so:system/lib/soundfx/libaudioeffectoffload.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
 	$(PROPRIETARY_PATH)/lib/soundfx/libmyspace.so:system/lib/soundfx/libmyspace.so \
+	$(PROPRIETARY_PATH)/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
+	$(PROPRIETARY_PATH)/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
+	$(PROPRIETARY_PATH)/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
@@ -375,10 +379,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
-	$(PROPRIETARY_PATH)/vendor/lib/liblistensoundmodel2.so:system/vendor/lib/liblistensoundmodel2.so \
-	$(PROPRIETARY_PATH)/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
-	$(PROPRIETARY_PATH)/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
-	$(PROPRIETARY_PATH)/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
+	$(PROPRIETARY_PATH)/vendor/lib/liblistensoundmodel2.so:system/vendor/lib/liblistensoundmodel2.so
 
 # FM Radio
 PRODUCT_COPY_FILES += \
