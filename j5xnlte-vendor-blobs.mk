@@ -385,3 +385,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
 	$(PROPRIETARY_PATH)/bin/fmconfig:system/bin/fmconfig
+
+# Nfc
+PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/lib/hw/nfc_nci.msm8916.so:system/lib/hw/nfc_nci.msm8916.so
