@@ -128,26 +128,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_vt_15fps.so:system/vendor/lib/libchromatix_sr552_vt_15fps.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_vt_30fps.so:system/vendor/lib/libchromatix_sr552_vt_30fps.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_liveshot.so:system/vendor/lib/libchromatix_sr552_liveshot.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_zslshot.so:system/vendor/lib/libchromatix_sr552_zslshot.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libavenhancements.so:system/vendor/lib/libavenhancements.so
-
-# Widevine
-PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
-
-# DRM
-PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/bin/qseecomd:system/bin/qseecomd \
-	$(PROPRIETARY_PATH)/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
-	$(PROPRIETARY_PATH)/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
-	$(PROPRIETARY_PATH)/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libprdrmdecrypt.so:system/vendor/lib/libprdrmdecrypt.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libtzplayready.so:system/vendor/lib/libtzplayready.so \
-	$(PROPRIETARY_PATH)/vendor/lib/mediadrm/libprmediadrmdecrypt.so:system/vendor/lib/mediadrm/libprmediadrmdecrypt.so \
-	$(PROPRIETARY_PATH)/vendor/lib/mediadrm/libprmediadrmplugin.so:system/vendor/lib/mediadrm/libprmediadrmplugin.so
+	$(PROPRIETARY_PATH)/vendor/lib/libchromatix_sr552_zslshot.so:system/vendor/lib/libchromatix_sr552_zslshot.so
 
 ## GPS
 PRODUCT_COPY_FILES += \
@@ -163,37 +144,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/libgps.utils.so:system/lib/libgps.utils.so \
 	$(PROPRIETARY_PATH)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
 	$(PROPRIETARY_PATH)/lib/libloc_eng.so:system/lib/libloc_eng.so
-
-## Graphics
-PRODUCT_COPY_FILES += \
-	$(PROPRIETARY_PATH)/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
-	$(PROPRIETARY_PATH)/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
-	$(PROPRIETARY_PATH)/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
-	$(PROPRIETARY_PATH)/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
-	$(PROPRIETARY_PATH)/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
-	$(PROPRIETARY_PATH)/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
-	$(PROPRIETARY_PATH)/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
-	$(PROPRIETARY_PATH)/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
-	$(PROPRIETARY_PATH)/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
-	$(PROPRIETARY_PATH)/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
-	$(PROPRIETARY_PATH)/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
-	$(PROPRIETARY_PATH)/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
-	$(PROPRIETARY_PATH)/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
-	$(PROPRIETARY_PATH)/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
-	$(PROPRIETARY_PATH)/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
-	$(PROPRIETARY_PATH)/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
-	$(PROPRIETARY_PATH)/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libc2d30-a4xx.so:system/vendor/lib/libc2d30-a4xx.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libsc-a2xx.so:system/vendor/lib/libsc-a2xx.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
-	$(PROPRIETARY_PATH)/vendor/lib/libscale.so:system/vendor/lib/libscale.so
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -254,6 +204,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
@@ -292,6 +243,7 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/bin/rmt_storage:system/bin/rmt_storage \
 	$(PROPRIETARY_PATH)/bin/wlandutservice:system/bin/wlandutservice \
 	$(PROPRIETARY_PATH)/etc/plmn_se13.bin:system/etc/plmn_se13.bin \
+	$(PROPRIETARY_PATH)/etc/srm.bin:system/etc/srm.bin \
 	$(PROPRIETARY_PATH)/lib/libcordon.so:system/lib/libcordon.so \
 	$(PROPRIETARY_PATH)/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
 	$(PROPRIETARY_PATH)/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so \
@@ -330,7 +282,6 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvcel.so:system/vendor/lib/libvcel.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so
-
 
 ## Audio
 PRODUCT_COPY_FILES += \
