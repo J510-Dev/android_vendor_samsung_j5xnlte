@@ -1,5 +1,9 @@
 PROPRIETARY_PATH := vendor/samsung/j5xnlte/proprietary
 
+#TimeService
+PRODUCT_COPY_FILES += \
+	$(PROPRIETARY_PATH)/app/TimeService/TimeService.apk:system/app/TimeService/TimeService.apk
+
 #ACDBs
 PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/etc/Bluetooth_cal.acdb:system/etc/Bluetooth_cal.acdb \
@@ -138,11 +142,13 @@ PRODUCT_COPY_FILES += \
 	$(PROPRIETARY_PATH)/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
 	$(PROPRIETARY_PATH)/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
+	$(PROPRIETARY_PATH)/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
 	$(PROPRIETARY_PATH)/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
 	$(PROPRIETARY_PATH)/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
 	$(PROPRIETARY_PATH)/lib/libloc_core.so:system/lib/libloc_core.so \
 	$(PROPRIETARY_PATH)/lib/libgps.utils.so:system/lib/libgps.utils.so \
 	$(PROPRIETARY_PATH)/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
+	$(PROPRIETARY_PATH)/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
 	$(PROPRIETARY_PATH)/lib/libloc_eng.so:system/lib/libloc_eng.so
 
 # Media
